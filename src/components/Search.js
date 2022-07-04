@@ -24,7 +24,7 @@ const Search = () => {
         onBlur={()=>setFocus(false)}
         onChange={(e) => setText(e.target.value)}
         onKeyDown={(e)=>{
-          if(e.key=='Enter'){setSearchTerm(text)
+          if(e.key==='Enter'){setSearchTerm(text)
           updatePrevSearch([...previousSearches,<div key={Math.random()} className='bg-blue-200 rounded-xl dark:bg-indigo-200/[50%] w-fit p-2 m-1'>{text}</div>])
           setFocus(false)
           }
